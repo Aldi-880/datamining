@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
+    record_timing=False,
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 664, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import roc_curve
+from sklearn.metrics import roc_auc_score
+from sklearn.naive_bayes import GaussianNB
+
+training, test = train_test_split(df, train_size = 0.8, test_size = 0.2, shuffle=False)
+training_label, test_label = train_test_split(y, train_size = 0.8, test_size = 0.2, shuffle=False)
+
+clf2 = GaussianNB()
+clf2.fit(training, training_label)
+
+probas = clf2.predict_proba(test)94
+------------------
+
+[0;36m  File [0;32m"<ipython-input-10-b95abfc21b5b>"[0;36m, line [0;32m12[0m
+[0;31m    probas = clf2.predict_proba(test)94[0m
+[0m                                      ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m invalid syntax
+
+SyntaxError: invalid syntax (<ipython-input-10-b95abfc21b5b>, line 12)
+
