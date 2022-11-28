@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tugas 1 &#8212; MT ALDI SYAHPRANATA</title>
+    <title>TUGAS 2 &#8212; MT ALDI SYAHPRANATA</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,6 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tugas 3 KNN (using scikit-learn) on iris dataset" href="Tugas%203.html" />
+    <link rel="prev" title="Tugas 1" href="Tugas%201.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -113,7 +115,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="markdown.html">
    Markdown Files
@@ -124,8 +126,8 @@ const thebe_selector_output = ".output, .cell_output"
    Tugas 1
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Tugas%202.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    TUGAS 2
   </a>
  </li>
@@ -218,7 +220,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://colab.research.google.com/github/Aldi-880/datamining/blob/gh-pages/_sources/notebooks.ipynb"
+        <a href="https://colab.research.google.com/github/Aldi-880/datamining/blob/gh-pages/_sources/Tugas 2.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -278,7 +280,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/Aldi-880/datamining/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/Aldi-880/datamining/issues/new?title=Issue%20on%20page%20%2FTugas 2.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -306,7 +308,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/notebooks.ipynb"
+        <a href="_sources/Tugas 2.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -365,82 +367,41 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Tugas 1
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#equal-width">
+   1. Equal-width
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tugas-2">
-   TUGAS 2
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#equal-frekuensi-interval">
+   2. Equal frekuensi interval
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equal-width">
-     1. Equal-width
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equal-frekuensi-interval">
-     2. Equal frekuensi interval
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#entropy">
-     3. Entropy
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#split-1-4-4">
-     <em>
-      Split 1 : 4.4
-     </em>
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#split-2-5-5">
-     <em>
-      Split 2 : 5.5
-     </em>
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#split-3-7-0">
-     <em>
-      Split 3 : 7.0
-     </em>
-    </a>
-   </li>
-  </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#latihan">
-   LATIHAN
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#entropy">
+   3. Entropy
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#knn-using-scikit-learn-on-iris-dataset">
-     KNN (using scikit-learn) on iris dataset
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#load-the-iris-data-set-and-check-the-features">
-     Load the iris data set and check the features
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#train-the-model">
-       Train The Model
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#k-values-with-3-to-19-has-the-same-accuracy-which-is-96-66-so-we-can-use-any-one-value-from-that-i-choose-k-as-5-and-train-the-model-with-full-training-data">
-     K values with 3 to 19 has the same accuracy which is 96.66, so we can use any one value from that, i choose K as 5 and train the model with full training data
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#split-1-4-4">
+   <em>
+    Split 1 : 4.4
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#split-2-5-5">
+   <em>
+    Split 2 : 5.5
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#split-3-7-0">
+   <em>
+    Split 3 : 7.0
+   </em>
+  </a>
  </li>
 </ul>
 
@@ -451,7 +412,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tugas 1</h1>
+                <h1>TUGAS 2</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -461,82 +422,41 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Tugas 1
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#equal-width">
+   1. Equal-width
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tugas-2">
-   TUGAS 2
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#equal-frekuensi-interval">
+   2. Equal frekuensi interval
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equal-width">
-     1. Equal-width
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equal-frekuensi-interval">
-     2. Equal frekuensi interval
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#entropy">
-     3. Entropy
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#split-1-4-4">
-     <em>
-      Split 1 : 4.4
-     </em>
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#split-2-5-5">
-     <em>
-      Split 2 : 5.5
-     </em>
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#split-3-7-0">
-     <em>
-      Split 3 : 7.0
-     </em>
-    </a>
-   </li>
-  </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#latihan">
-   LATIHAN
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#entropy">
+   3. Entropy
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#knn-using-scikit-learn-on-iris-dataset">
-     KNN (using scikit-learn) on iris dataset
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#load-the-iris-data-set-and-check-the-features">
-     Load the iris data set and check the features
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#train-the-model">
-       Train The Model
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#k-values-with-3-to-19-has-the-same-accuracy-which-is-96-66-so-we-can-use-any-one-value-from-that-i-choose-k-as-5-and-train-the-model-with-full-training-data">
-     K values with 3 to 19 has the same accuracy which is 96.66, so we can use any one value from that, i choose K as 5 and train the model with full training data
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#split-1-4-4">
+   <em>
+    Split 1 : 4.4
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#split-2-5-5">
+   <em>
+    Split 2 : 5.5
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#split-3-7-0">
+   <em>
+    Split 3 : 7.0
+   </em>
+  </a>
  </li>
 </ul>
 
@@ -548,366 +468,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-1">
-<h1>Tugas 1<a class="headerlink" href="#tugas-1" title="Permalink to this headline">#</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create dataset from Google Drive</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/vincent101/KRR/master/Advertising.csv&quot;</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">data</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-cfde4946-bf63-48dc-a80a-427e17e79de9">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Unnamed: 0</th>
-      <th>TV</th>
-      <th>Radio</th>
-      <th>Newspaper</th>
-      <th>Sales</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>230.1</td>
-      <td>37.8</td>
-      <td>69.2</td>
-      <td>22.1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>44.5</td>
-      <td>39.3</td>
-      <td>45.1</td>
-      <td>10.4</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>17.2</td>
-      <td>45.9</td>
-      <td>69.3</td>
-      <td>9.3</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>151.5</td>
-      <td>41.3</td>
-      <td>58.5</td>
-      <td>18.5</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>180.8</td>
-      <td>10.8</td>
-      <td>58.4</td>
-      <td>12.9</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>195</th>
-      <td>196</td>
-      <td>38.2</td>
-      <td>3.7</td>
-      <td>13.8</td>
-      <td>7.6</td>
-    </tr>
-    <tr>
-      <th>196</th>
-      <td>197</td>
-      <td>94.2</td>
-      <td>4.9</td>
-      <td>8.1</td>
-      <td>9.7</td>
-    </tr>
-    <tr>
-      <th>197</th>
-      <td>198</td>
-      <td>177.0</td>
-      <td>9.3</td>
-      <td>6.4</td>
-      <td>12.8</td>
-    </tr>
-    <tr>
-      <th>198</th>
-      <td>199</td>
-      <td>283.6</td>
-      <td>42.0</td>
-      <td>66.2</td>
-      <td>25.5</td>
-    </tr>
-    <tr>
-      <th>199</th>
-      <td>200</td>
-      <td>232.1</td>
-      <td>8.6</td>
-      <td>8.7</td>
-      <td>13.4</td>
-    </tr>
-  </tbody>
-</table>
-<p>200 rows × 5 columns</p>
-</div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cfde4946-bf63-48dc-a80a-427e17e79de9')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-cfde4946-bf63-48dc-a80a-427e17e79de9 button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cfde4946-bf63-48dc-a80a-427e17e79de9');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-</div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sales</span> <span class="o">=</span> <span class="n">data</span> <span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">]</span>
-<span class="n">sales</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      22.1
-1      10.4
-2       9.3
-3      18.5
-4      12.9
-       ... 
-195     7.6
-196     9.7
-197    12.8
-198    25.5
-199    13.4
-Name: Sales, Length: 200, dtype: float64
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 200 entries, 0 to 199
-Data columns (total 5 columns):
- #   Column      Non-Null Count  Dtype  
----  ------      --------------  -----  
- 0   Unnamed: 0  200 non-null    int64  
- 1   TV          200 non-null    float64
- 2   Radio       200 non-null    float64
- 3   Newspaper   200 non-null    float64
- 4   Sales       200 non-null    float64
-dtypes: float64(4), int64(1)
-memory usage: 7.9 KB
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">st</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">sales</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;mean = &#39;</span><span class="p">,</span><span class="n">mean</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean =  14.022499999999999
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">median</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">sales</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;median =&#39;</span><span class="p">,</span><span class="n">median</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>median = 12.9
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">modus</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">sales</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Modus = &#39;</span><span class="p">,</span><span class="n">modus</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Modus =  9.7
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">varian</span><span class="o">=</span><span class="n">sales</span><span class="o">.</span><span class="n">var</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Varian = &#39;</span><span class="p">,</span><span class="n">varian</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Varian =  27.22185301507538
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sales</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.4075714250767127
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">displot</span><span class="p">(</span><span class="n">sales</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
-</pre></div>
-</div>
-<img alt="_images/notebooks_12_1.png" src="_images/notebooks_12_1.png" />
-</div>
-</div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="tugas-2">
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-2">
 <h1>TUGAS 2<a class="headerlink" href="#tugas-2" title="Permalink to this headline">#</a></h1>
 <section id="equal-width">
 <h2>1. Equal-width<a class="headerlink" href="#equal-width" title="Permalink to this headline">#</a></h2>
@@ -929,7 +490,7 @@ memory usage: 7.9 KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-caefd170-b773-4b9d-8c8c-40858893fdc7">
+  <div id="df-be85fde8-e132-4084-97fd-209cc8a8de82">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1049,7 +610,7 @@ memory usage: 7.9 KB
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-caefd170-b773-4b9d-8c8c-40858893fdc7')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-be85fde8-e132-4084-97fd-209cc8a8de82')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1100,12 +661,12 @@ memory usage: 7.9 KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-caefd170-b773-4b9d-8c8c-40858893fdc7 button.colab-df-convert');
+          document.querySelector('#df-be85fde8-e132-4084-97fd-209cc8a8de82 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-caefd170-b773-4b9d-8c8c-40858893fdc7');
+          const element = document.querySelector('#df-be85fde8-e132-4084-97fd-209cc8a8de82');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1215,7 +776,7 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f266fbc2-358a-47f3-b67d-7926a6a58ade">
+  <div id="df-c4525d8a-f13a-4da1-b22d-f1522900818d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1299,7 +860,7 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f266fbc2-358a-47f3-b67d-7926a6a58ade')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c4525d8a-f13a-4da1-b22d-f1522900818d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1350,12 +911,12 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f266fbc2-358a-47f3-b67d-7926a6a58ade button.colab-df-convert');
+          document.querySelector('#df-c4525d8a-f13a-4da1-b22d-f1522900818d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f266fbc2-358a-47f3-b67d-7926a6a58ade');
+          const element = document.querySelector('#df-c4525d8a-f13a-4da1-b22d-f1522900818d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1375,7 +936,7 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-29f00e1c-6070-4866-906b-d07f32183fd9">
+  <div id="df-ddd3dac4-8fbf-4d85-8168-30c3de77e80f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1459,7 +1020,7 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-29f00e1c-6070-4866-906b-d07f32183fd9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ddd3dac4-8fbf-4d85-8168-30c3de77e80f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1510,12 +1071,12 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
 
       <script>
         const buttonEl =
-          document.querySelector('#df-29f00e1c-6070-4866-906b-d07f32183fd9 button.colab-df-convert');
+          document.querySelector('#df-ddd3dac4-8fbf-4d85-8168-30c3de77e80f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-29f00e1c-6070-4866-906b-d07f32183fd9');
+          const element = document.querySelector('#df-ddd3dac4-8fbf-4d85-8168-30c3de77e80f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1535,7 +1096,7 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-e93d2f78-6e82-4062-9fbc-9253512ac79a">
+  <div id="df-323a978d-ccc5-41f5-982b-6da23f124888">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1619,7 +1180,7 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e93d2f78-6e82-4062-9fbc-9253512ac79a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-323a978d-ccc5-41f5-982b-6da23f124888')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1670,12 +1231,12 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e93d2f78-6e82-4062-9fbc-9253512ac79a button.colab-df-convert');
+          document.querySelector('#df-323a978d-ccc5-41f5-982b-6da23f124888 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e93d2f78-6e82-4062-9fbc-9253512ac79a');
+          const element = document.querySelector('#df-323a978d-ccc5-41f5-982b-6da23f124888');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1695,7 +1256,7 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-1a22d116-a276-43cf-9c24-0d55e31a18e1">
+  <div id="df-e17b1357-9c61-475c-9118-a8966f2c0aa6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1779,7 +1340,7 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-1a22d116-a276-43cf-9c24-0d55e31a18e1')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e17b1357-9c61-475c-9118-a8966f2c0aa6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1830,12 +1391,12 @@ interval_petal.width : [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
 
       <script>
         const buttonEl =
-          document.querySelector('#df-1a22d116-a276-43cf-9c24-0d55e31a18e1 button.colab-df-convert');
+          document.querySelector('#df-e17b1357-9c61-475c-9118-a8966f2c0aa6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-1a22d116-a276-43cf-9c24-0d55e31a18e1');
+          const element = document.querySelector('#df-e17b1357-9c61-475c-9118-a8966f2c0aa6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1923,7 +1484,7 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a2664a9e-95c8-431f-b6e4-70d583abbde7">
+  <div id="df-27efc789-93ed-4cb3-8c9c-47245feca8b4">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2007,7 +1568,7 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a2664a9e-95c8-431f-b6e4-70d583abbde7')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-27efc789-93ed-4cb3-8c9c-47245feca8b4')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2058,12 +1619,12 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a2664a9e-95c8-431f-b6e4-70d583abbde7 button.colab-df-convert');
+          document.querySelector('#df-27efc789-93ed-4cb3-8c9c-47245feca8b4 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a2664a9e-95c8-431f-b6e4-70d583abbde7');
+          const element = document.querySelector('#df-27efc789-93ed-4cb3-8c9c-47245feca8b4');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2083,7 +1644,7 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-e51a41f4-c2d0-4350-8bff-cd57a33e8404">
+  <div id="df-665d74f6-ddd8-4db9-91f0-c78d9e0c88dc">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2167,7 +1728,7 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e51a41f4-c2d0-4350-8bff-cd57a33e8404')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-665d74f6-ddd8-4db9-91f0-c78d9e0c88dc')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2218,12 +1779,12 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e51a41f4-c2d0-4350-8bff-cd57a33e8404 button.colab-df-convert');
+          document.querySelector('#df-665d74f6-ddd8-4db9-91f0-c78d9e0c88dc button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e51a41f4-c2d0-4350-8bff-cd57a33e8404');
+          const element = document.querySelector('#df-665d74f6-ddd8-4db9-91f0-c78d9e0c88dc');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2243,7 +1804,7 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-b580c2d9-d50c-40ab-b8c9-665af741ae80">
+  <div id="df-f0fb76cc-8aa6-4ca9-9195-a4acf4851b86">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2327,7 +1888,7 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b580c2d9-d50c-40ab-b8c9-665af741ae80')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f0fb76cc-8aa6-4ca9-9195-a4acf4851b86')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2378,12 +1939,12 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b580c2d9-d50c-40ab-b8c9-665af741ae80 button.colab-df-convert');
+          document.querySelector('#df-f0fb76cc-8aa6-4ca9-9195-a4acf4851b86 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b580c2d9-d50c-40ab-b8c9-665af741ae80');
+          const element = document.querySelector('#df-f0fb76cc-8aa6-4ca9-9195-a4acf4851b86');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2403,7 +1964,7 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-b0c7dc34-d101-443f-816b-d2d6d406ba4b">
+  <div id="df-d889f28f-bd21-4b38-89c9-b2cc1986a9fd">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2487,7 +2048,7 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b0c7dc34-d101-443f-816b-d2d6d406ba4b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-d889f28f-bd21-4b38-89c9-b2cc1986a9fd')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2538,12 +2099,12 @@ interval_petal.width : [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b0c7dc34-d101-443f-816b-d2d6d406ba4b button.colab-df-convert');
+          document.querySelector('#df-d889f28f-bd21-4b38-89c9-b2cc1986a9fd button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b0c7dc34-d101-443f-816b-d2d6d406ba4b');
+          const element = document.querySelector('#df-d889f28f-bd21-4b38-89c9-b2cc1986a9fd');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2600,7 +2161,7 @@ Entropi adalah sifat termodinamika yang penting dari sebuah zat, dimana harganya
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-ffa27406-7d30-42b7-a0b9-240230685b8d">
+  <div id="df-b19835d3-c1a8-48d0-9e94-93f812177e9c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2659,7 +2220,7 @@ Entropi adalah sifat termodinamika yang penting dari sebuah zat, dimana harganya
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-ffa27406-7d30-42b7-a0b9-240230685b8d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b19835d3-c1a8-48d0-9e94-93f812177e9c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2710,12 +2271,12 @@ Entropi adalah sifat termodinamika yang penting dari sebuah zat, dimana harganya
 
       <script>
         const buttonEl =
-          document.querySelector('#df-ffa27406-7d30-42b7-a0b9-240230685b8d button.colab-df-convert');
+          document.querySelector('#df-b19835d3-c1a8-48d0-9e94-93f812177e9c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-ffa27406-7d30-42b7-a0b9-240230685b8d');
+          const element = document.querySelector('#df-b19835d3-c1a8-48d0-9e94-93f812177e9c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2747,7 +2308,7 @@ Entropi adalah sifat termodinamika yang penting dari sebuah zat, dimana harganya
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c71fc504-585b-42ad-8a14-74482fc2f297">
+  <div id="df-d0d1b93d-3d4e-40a9-8f74-e22df2ea94e0">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2831,7 +2392,7 @@ Entropi adalah sifat termodinamika yang penting dari sebuah zat, dimana harganya
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c71fc504-585b-42ad-8a14-74482fc2f297')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-d0d1b93d-3d4e-40a9-8f74-e22df2ea94e0')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2882,12 +2443,12 @@ Entropi adalah sifat termodinamika yang penting dari sebuah zat, dimana harganya
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c71fc504-585b-42ad-8a14-74482fc2f297 button.colab-df-convert');
+          document.querySelector('#df-d0d1b93d-3d4e-40a9-8f74-e22df2ea94e0 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c71fc504-585b-42ad-8a14-74482fc2f297');
+          const element = document.querySelector('#df-d0d1b93d-3d4e-40a9-8f74-e22df2ea94e0');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3049,472 +2610,6 @@ Entropi adalah sifat termodinamika yang penting dari sebuah zat, dimana harganya
 <p>Split terbaik yaitu split 3 yang memberikan keuntungan informasi sebesar 0.0005490214732508658 karena yang paling rendah</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="latihan">
-<h1>LATIHAN<a class="headerlink" href="#latihan" title="Permalink to this headline">#</a></h1>
-<section id="knn-using-scikit-learn-on-iris-dataset">
-<h2>KNN (using scikit-learn) on iris dataset<a class="headerlink" href="#knn-using-scikit-learn-on-iris-dataset" title="Permalink to this headline">#</a></h2>
-<p>Building a model to classify the species of Iris flower based on the sepal length, speal width, petal length and petal width</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data in a csv format, each observation has a 4 measurements/features </span>
-<span class="c1"># and the species type.</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
-<span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<iframe
-    width="400"
-    height="200"
-    src="http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
-    frameborder="0"
-    allowfullscreen
-></iframe>
-</div></div>
-</div>
-</section>
-<section id="load-the-iris-data-set-and-check-the-features">
-<h2>Load the iris data set and check the features<a class="headerlink" href="#load-the-iris-data-set-and-check-the-features" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import the load_iris function from datasets module</span>
-<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sklearn.utils.Bunch
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris</span><span class="o">.</span><span class="n">data</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[5.1, 3.5, 1.4, 0.2],
-       [4.9, 3. , 1.4, 0.2],
-       [4.7, 3.2, 1.3, 0.2],
-       [4.6, 3.1, 1.5, 0.2],
-       [5. , 3.6, 1.4, 0.2],
-       [5.4, 3.9, 1.7, 0.4],
-       [4.6, 3.4, 1.4, 0.3],
-       [5. , 3.4, 1.5, 0.2],
-       [4.4, 2.9, 1.4, 0.2],
-       [4.9, 3.1, 1.5, 0.1],
-       [5.4, 3.7, 1.5, 0.2],
-       [4.8, 3.4, 1.6, 0.2],
-       [4.8, 3. , 1.4, 0.1],
-       [4.3, 3. , 1.1, 0.1],
-       [5.8, 4. , 1.2, 0.2],
-       [5.7, 4.4, 1.5, 0.4],
-       [5.4, 3.9, 1.3, 0.4],
-       [5.1, 3.5, 1.4, 0.3],
-       [5.7, 3.8, 1.7, 0.3],
-       [5.1, 3.8, 1.5, 0.3],
-       [5.4, 3.4, 1.7, 0.2],
-       [5.1, 3.7, 1.5, 0.4],
-       [4.6, 3.6, 1. , 0.2],
-       [5.1, 3.3, 1.7, 0.5],
-       [4.8, 3.4, 1.9, 0.2],
-       [5. , 3. , 1.6, 0.2],
-       [5. , 3.4, 1.6, 0.4],
-       [5.2, 3.5, 1.5, 0.2],
-       [5.2, 3.4, 1.4, 0.2],
-       [4.7, 3.2, 1.6, 0.2],
-       [4.8, 3.1, 1.6, 0.2],
-       [5.4, 3.4, 1.5, 0.4],
-       [5.2, 4.1, 1.5, 0.1],
-       [5.5, 4.2, 1.4, 0.2],
-       [4.9, 3.1, 1.5, 0.2],
-       [5. , 3.2, 1.2, 0.2],
-       [5.5, 3.5, 1.3, 0.2],
-       [4.9, 3.6, 1.4, 0.1],
-       [4.4, 3. , 1.3, 0.2],
-       [5.1, 3.4, 1.5, 0.2],
-       [5. , 3.5, 1.3, 0.3],
-       [4.5, 2.3, 1.3, 0.3],
-       [4.4, 3.2, 1.3, 0.2],
-       [5. , 3.5, 1.6, 0.6],
-       [5.1, 3.8, 1.9, 0.4],
-       [4.8, 3. , 1.4, 0.3],
-       [5.1, 3.8, 1.6, 0.2],
-       [4.6, 3.2, 1.4, 0.2],
-       [5.3, 3.7, 1.5, 0.2],
-       [5. , 3.3, 1.4, 0.2],
-       [7. , 3.2, 4.7, 1.4],
-       [6.4, 3.2, 4.5, 1.5],
-       [6.9, 3.1, 4.9, 1.5],
-       [5.5, 2.3, 4. , 1.3],
-       [6.5, 2.8, 4.6, 1.5],
-       [5.7, 2.8, 4.5, 1.3],
-       [6.3, 3.3, 4.7, 1.6],
-       [4.9, 2.4, 3.3, 1. ],
-       [6.6, 2.9, 4.6, 1.3],
-       [5.2, 2.7, 3.9, 1.4],
-       [5. , 2. , 3.5, 1. ],
-       [5.9, 3. , 4.2, 1.5],
-       [6. , 2.2, 4. , 1. ],
-       [6.1, 2.9, 4.7, 1.4],
-       [5.6, 2.9, 3.6, 1.3],
-       [6.7, 3.1, 4.4, 1.4],
-       [5.6, 3. , 4.5, 1.5],
-       [5.8, 2.7, 4.1, 1. ],
-       [6.2, 2.2, 4.5, 1.5],
-       [5.6, 2.5, 3.9, 1.1],
-       [5.9, 3.2, 4.8, 1.8],
-       [6.1, 2.8, 4. , 1.3],
-       [6.3, 2.5, 4.9, 1.5],
-       [6.1, 2.8, 4.7, 1.2],
-       [6.4, 2.9, 4.3, 1.3],
-       [6.6, 3. , 4.4, 1.4],
-       [6.8, 2.8, 4.8, 1.4],
-       [6.7, 3. , 5. , 1.7],
-       [6. , 2.9, 4.5, 1.5],
-       [5.7, 2.6, 3.5, 1. ],
-       [5.5, 2.4, 3.8, 1.1],
-       [5.5, 2.4, 3.7, 1. ],
-       [5.8, 2.7, 3.9, 1.2],
-       [6. , 2.7, 5.1, 1.6],
-       [5.4, 3. , 4.5, 1.5],
-       [6. , 3.4, 4.5, 1.6],
-       [6.7, 3.1, 4.7, 1.5],
-       [6.3, 2.3, 4.4, 1.3],
-       [5.6, 3. , 4.1, 1.3],
-       [5.5, 2.5, 4. , 1.3],
-       [5.5, 2.6, 4.4, 1.2],
-       [6.1, 3. , 4.6, 1.4],
-       [5.8, 2.6, 4. , 1.2],
-       [5. , 2.3, 3.3, 1. ],
-       [5.6, 2.7, 4.2, 1.3],
-       [5.7, 3. , 4.2, 1.2],
-       [5.7, 2.9, 4.2, 1.3],
-       [6.2, 2.9, 4.3, 1.3],
-       [5.1, 2.5, 3. , 1.1],
-       [5.7, 2.8, 4.1, 1.3],
-       [6.3, 3.3, 6. , 2.5],
-       [5.8, 2.7, 5.1, 1.9],
-       [7.1, 3. , 5.9, 2.1],
-       [6.3, 2.9, 5.6, 1.8],
-       [6.5, 3. , 5.8, 2.2],
-       [7.6, 3. , 6.6, 2.1],
-       [4.9, 2.5, 4.5, 1.7],
-       [7.3, 2.9, 6.3, 1.8],
-       [6.7, 2.5, 5.8, 1.8],
-       [7.2, 3.6, 6.1, 2.5],
-       [6.5, 3.2, 5.1, 2. ],
-       [6.4, 2.7, 5.3, 1.9],
-       [6.8, 3. , 5.5, 2.1],
-       [5.7, 2.5, 5. , 2. ],
-       [5.8, 2.8, 5.1, 2.4],
-       [6.4, 3.2, 5.3, 2.3],
-       [6.5, 3. , 5.5, 1.8],
-       [7.7, 3.8, 6.7, 2.2],
-       [7.7, 2.6, 6.9, 2.3],
-       [6. , 2.2, 5. , 1.5],
-       [6.9, 3.2, 5.7, 2.3],
-       [5.6, 2.8, 4.9, 2. ],
-       [7.7, 2.8, 6.7, 2. ],
-       [6.3, 2.7, 4.9, 1.8],
-       [6.7, 3.3, 5.7, 2.1],
-       [7.2, 3.2, 6. , 1.8],
-       [6.2, 2.8, 4.8, 1.8],
-       [6.1, 3. , 4.9, 1.8],
-       [6.4, 2.8, 5.6, 2.1],
-       [7.2, 3. , 5.8, 1.6],
-       [7.4, 2.8, 6.1, 1.9],
-       [7.9, 3.8, 6.4, 2. ],
-       [6.4, 2.8, 5.6, 2.2],
-       [6.3, 2.8, 5.1, 1.5],
-       [6.1, 2.6, 5.6, 1.4],
-       [7.7, 3. , 6.1, 2.3],
-       [6.3, 3.4, 5.6, 2.4],
-       [6.4, 3.1, 5.5, 1.8],
-       [6. , 3. , 4.8, 1.8],
-       [6.9, 3.1, 5.4, 2.1],
-       [6.7, 3.1, 5.6, 2.4],
-       [6.9, 3.1, 5.1, 2.3],
-       [5.8, 2.7, 5.1, 1.9],
-       [6.8, 3.2, 5.9, 2.3],
-       [6.7, 3.3, 5.7, 2.5],
-       [6.7, 3. , 5.2, 2.3],
-       [6.3, 2.5, 5. , 1.9],
-       [6.5, 3. , 5.2, 2. ],
-       [6.2, 3.4, 5.4, 2.3],
-       [5.9, 3. , 5.1, 1.8]])
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;sepal length (cm)&#39;, &#39;sepal width (cm)&#39;, &#39;petal length (cm)&#39;, &#39;petal width (cm)&#39;]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
- 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
- 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2
- 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
- 2 2]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">target_names</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;setosa&#39; &#39;versicolor&#39; &#39;virginica&#39;]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;numpy.ndarray&#39;&gt;
-&lt;class &#39;numpy.ndarray&#39;&gt;
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(150, 4)
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Feature matrix in a object named X</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span>
-<span class="c1"># response vector in a object named y</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(150, 4)
-(150,)
-</pre></div>
-</div>
-</div>
-</div>
-<section id="train-the-model">
-<h3>Train The Model<a class="headerlink" href="#train-the-model" title="Permalink to this headline">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># splitting the data into training and test sets (80:20)</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="n">X_train</span><span class="p">,</span><span class="n">X_test</span><span class="p">,</span><span class="n">y_train</span><span class="p">,</span><span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#shape of train and test objects</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(120, 4)
-(30, 4)
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># shape of new y objects</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(120,)
-(30,)
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import the KNeighborsClassifier class from sklearn</span>
-<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
-
-<span class="c1">#import metrics model to check the accuracy </span>
-<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
-<span class="c1">#Try running from k=1 through 25 and record testing accuracy</span>
-<span class="n">k_range</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">26</span><span class="p">)</span>
-<span class="n">scores</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">scores_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">k_range</span><span class="p">:</span>
-        <span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
-        <span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
-        <span class="n">y_pred</span><span class="o">=</span><span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-        <span class="n">scores</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred</span><span class="p">)</span>
-        <span class="n">scores_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Testing accuracy for each value of K</span>
-<span class="n">scores</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1: 0.9333333333333333,
- 2: 0.9333333333333333,
- 3: 0.9666666666666667,
- 4: 0.9666666666666667,
- 5: 0.9666666666666667,
- 6: 0.9666666666666667,
- 7: 0.9666666666666667,
- 8: 0.9666666666666667,
- 9: 0.9666666666666667,
- 10: 0.9666666666666667,
- 11: 0.9666666666666667,
- 12: 0.9666666666666667,
- 13: 0.9666666666666667,
- 14: 0.9666666666666667,
- 15: 0.9666666666666667,
- 16: 0.9666666666666667,
- 17: 0.9666666666666667,
- 18: 0.9666666666666667,
- 19: 0.9666666666666667,
- 20: 0.9333333333333333,
- 21: 0.9666666666666667,
- 22: 0.9333333333333333,
- 23: 0.9666666666666667,
- 24: 0.9666666666666667,
- 25: 0.9666666666666667}
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="c1">#plot the relationship between K and the testing accuracy</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">k_range</span><span class="p">,</span><span class="n">scores_list</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Value of K for KNN&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Testing Accuracy&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Testing Accuracy&#39;)
-</pre></div>
-</div>
-<img alt="_images/notebooks_76_1.png" src="_images/notebooks_76_1.png" />
-</div>
-</div>
-</section>
-</section>
-<section id="k-values-with-3-to-19-has-the-same-accuracy-which-is-96-66-so-we-can-use-any-one-value-from-that-i-choose-k-as-5-and-train-the-model-with-full-training-data">
-<h2>K values with 3 to 19 has the same accuracy which is 96.66, so we can use any one value from that, i choose K as 5 and train the model with full training data<a class="headerlink" href="#k-values-with-3-to-19-has-the-same-accuracy-which-is-96-66-so-we-can-use-any-one-value-from-that-i-choose-k-as-5-and-train-the-model-with-full-training-data" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>KNeighborsClassifier()
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#0 = setosa, 1=versicolor, 2=virginica</span>
-<span class="n">classes</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span><span class="s1">&#39;setosa&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="s1">&#39;versicolor&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="s1">&#39;virginica&#39;</span><span class="p">}</span>
-
-<span class="c1">#Making prediction on some unseen data </span>
-<span class="c1">#predict for the below two random observations</span>
-<span class="n">x_new</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
-         <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]]</span>
-<span class="n">y_predict</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_new</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">classes</span><span class="p">[</span><span class="n">y_predict</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">classes</span><span class="p">[</span><span class="n">y_predict</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>versicolor
-setosa
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -3543,6 +2638,20 @@ setosa
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Tugas%201.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Tugas 1</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Tugas%203.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Tugas 3 KNN (using scikit-learn) on iris dataset</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
